@@ -1,16 +1,13 @@
 import './App.css';
-import HeroBanner from './components/heroBanner/HeroBanner';
+import '@splidejs/react-splide/css';
 import Navbar from './components/navbar/Navbar';
+import Home from './pages/home/Home';
 
 function App() {
   return (
     <div className="App">
-        <section className='relative'>
-          <div className="absolute top-0 w-full">
-            <Navbar />
-          </div>
-          <HeroBanner />
-        </section>
+        <Navbar />
+        <Home />
     </div>
   );
 }

@@ -6,6 +6,11 @@
   .custom-container {
     @apply w-full px-[100px] 2xl:max-w-[1440px] 2xl:mx-auto !important;
   }
+  .hero-banner::after{
+    @apply w-full h-full absolute bg-gradient-to-t from-black; 
+    content: "";
+    z-index: -1;
+  }
 }
 
 body{
